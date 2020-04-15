@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
 	By emailId = By.id("username");
 	By password = By.id("password");
 	By loginButton = By.id("loginBtn");
-	By signUpLink = By.linkText("Sign up11");
+	By signUpLink = By.linkText("Sign up");
 	By loginErrorText = By.xpath("//div[@class='private-alert__inner']");
 
 	public LoginPage(WebDriver driver) {
@@ -45,8 +45,8 @@ public class LoginPage extends BasePage {
 
 	public HomePage doLogin(Credentials userCred) {
 		elementUtil.waitForElementPresent(emailId);
-		elementUtil.doSendKeys(emailId, userCred.getAppUsername());
-		elementUtil.doSendKeys(password, userCred.getAppPassword());
+		elementUtil.doSendKeys(emailId,userCred.getAppUsername());
+		elementUtil.doSendKeys(password,userCred.getAppPassword());
 		elementUtil.doClick(loginButton);
 
 		return new HomePage(driver);

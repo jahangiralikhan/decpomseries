@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.hubspot.base.BasePage;
@@ -35,10 +36,16 @@ public class HomePageTest {
 	@Feature("US 502 : Create test for Homepage on hubspot")
 
 	@BeforeTest()
-	public void setUp() throws InterruptedException {
+	@Parameters(value={"browser"})
+	public void setUp(String browser) {
+		String browserName = null;// this is .xml file browser value
 		basePage = new BasePage();
 		prop = basePage.init_properties();
-		String browserName = prop.getProperty("browser");
+		if(browser.equals(null) || browser.equals("") || browser.isEmpty()){
+			 browserName = prop.getProperty("browser");
+		}else{
+			browserName = browser;
+		}
 		driver = basePage.init_driver(browserName);
 		driver.get(prop.getProperty("url"));
 		loginPage = new LoginPage(driver);

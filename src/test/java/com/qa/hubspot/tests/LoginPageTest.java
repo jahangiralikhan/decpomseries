@@ -2,7 +2,6 @@ package com.qa.hubspot.tests;
 
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -34,12 +33,10 @@ public class LoginPageTest {
 	LoginPage loginPage;
 	Credentials userCred;
 	
-
-
 	@BeforeTest()
 	@Parameters(value={"browser"})
 	public void setUp(String browser) {
-		String browserName = null;
+		String browserName = null;// this is xml file browser value
 		basePage = new BasePage();
 		prop = basePage.init_properties();
 				

@@ -6,8 +6,8 @@ public class Credentials {
 	String appPassword;
 
 	public Credentials(String appUsername, String appPassword) {
-		this.appUsername = appUsername;
-		this.appPassword = appPassword;
+		this.appUsername =appUsername;
+		this.appPassword =appPassword;
 	}
 
 	public String getAppUsername() {
@@ -15,7 +15,7 @@ public class Credentials {
 	}
 
 	public void setAppUsername(String appUsername) {
-		this.appUsername = appUsername;
+		this.appUsername =appUsername;
 	}
 
 	public String getAppPassword() {
@@ -23,7 +23,7 @@ public class Credentials {
 	}
 
 	public void setAppPassword(String appPassword) {
-		this.appPassword = appPassword;
+		this.appPassword =appPassword;
 	}
 
 }
