@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 8, Errors: 0, Skipped: 9, Time elapsed: 0.762 s <<< FAILURE! - in TestSuite
+setUp(com.qa.hubspot.tests.LoginPageTest)  Time elapsed: 0.432 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeTest on method setUp but has not been marked @Optional or defined
+
+
+setUp(com.qa.hubspot.tests.HomePageTest)  Time elapsed: 0.468 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.hubspot.tests.HomePageTest.setUp(HomePageTest.java:35)
+
+tearDown(com.qa.hubspot.tests.HomePageTest)  Time elapsed: 0.469 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.hubspot.tests.HomePageTest.tearDown(HomePageTest.java:68)
+
+setUp(com.qa.hubspot.tests.HomePageTest)  Time elapsed: 0.734 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.hubspot.tests.HomePageTest.setUp(HomePageTest.java:35)
+
+tearDown(com.qa.hubspot.tests.HomePageTest)  Time elapsed: 0.734 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.hubspot.tests.HomePageTest.tearDown(HomePageTest.java:68)
+
+setUp(com.qa.hubspot.tests.HomePageTest)  Time elapsed: 0.738 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.hubspot.tests.HomePageTest.setUp(HomePageTest.java:35)
+
+tearDown(com.qa.hubspot.tests.HomePageTest)  Time elapsed: 0.738 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.hubspot.tests.HomePageTest.tearDown(HomePageTest.java:68)
+
+tearDown(com.qa.hubspot.tests.LoginPageTest)  Time elapsed: 0.738 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.hubspot.tests.LoginPageTest.tearDown(LoginPageTest.java:102)
+
