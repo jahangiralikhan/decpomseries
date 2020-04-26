@@ -3,7 +3,7 @@
 
 <suite name="Hub Spot Regression Suite" thread-count="2" parallel="tests" >
 <listeners>
-	<<!-- listener class-name="com.qa.hubspot.listener.ExtentReportListener" /> --> 
+	<listener class-name="com.qa.hubspot.listener.ExtentReportListener" /> 
 	<!-- <listener class-name="com.qa.hubspot.listener.pdflistener" /> -->
 	 <listener class-name="com.qa.hubspot.listener.TestAllureListener" />   
 		 <listener class-name="com.qa.hubspot.listener.TesultsListener" />  

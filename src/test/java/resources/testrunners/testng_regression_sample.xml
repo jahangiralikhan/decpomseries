@@ -3,10 +3,10 @@
 
 <suite name="Hub Spot Regression Suite" >
 <listeners>
-	<!-- <listener class-name="com.qa.hubspot.listener.ExtentReportListener" />  -->
+	<listener class-name="com.qa.hubspot.listener.ExtentReportListener" /> 
 	<!-- <listener class-name="com.qa.hubspot.listener.pdflistener" /> -->
 	 <listener class-name="com.qa.hubspot.listener.TestAllureListener" />   
-		<!-- <listener class-name="com.qa.hubspot.listener.TesultsListener" />  -->
+		<listener class-name="com.qa.hubspot.listener.TesultsListener" />  
 	</listeners>
 	<test name="Hub Spot Functional Regression Test- FF">
 		<parameter name="browser" value="chrome" />
