@@ -65,6 +65,7 @@ public class LoginPageTest {
 		
 		Assert.assertEquals(title, AppConstants.LOGIN_PAGE_TITLE);
 		
+		
 	}
 
 	@Test(priority = 2)
